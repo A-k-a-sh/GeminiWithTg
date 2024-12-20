@@ -143,20 +143,7 @@ bot.on('message', async (msg) => {
 
 
 
-bot.onText(/\/def/, (msg) => {
-    const chatId = msg.chat.id;
 
-    // Use createReadStream for sending the image
-    const stream = fs.createReadStream('./img.jpg');
-
-    bot.sendPhoto(chatId, stream)
-        .then(() => {
-            console.log("Photo sent successfully");
-        })
-        .catch((err) => {
-            console.error("Error in sending photo: ", err);
-        });
-});
 
 
 
