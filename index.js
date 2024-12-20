@@ -1,12 +1,16 @@
 import TelegramBot from 'node-telegram-bot-api';
 import path from 'path';
 import fs from 'fs'
+import express from 'express';
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 import 'dotenv/config'
 
 import https from 'https';
+
+const app = express();
+const port = 3000;
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEYY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
@@ -143,6 +147,15 @@ bot.on('message', async (msg) => {
     //     bot.sendMessage(msg.chat.id, 'i dont understand');
     // }
 
+});
+
+
+app.get('/' , (req , res) => {
+    res.send('Hello World');
+})
+
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });
 
 
