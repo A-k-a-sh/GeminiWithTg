@@ -8,7 +8,7 @@ import 'dotenv/config'
 
 import https from 'https';
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEYY);
+const genAI = new GoogleGenerativeAI(AIzaSyCxBndl0cXdfa_Y9mJ7Qu8i4XFqkIqMfEQ);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 // const prompt = "Explain how AI works";
@@ -16,7 +16,7 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 // const result = await model.generateContent(prompt);
 // console.log(result.response.text());
 
-const token = process.env.TELEGRAM_TOKEN;
+const token = 6122051310:AAG2_wVLRF2NJChPtxfhBFQmgYHQa8YEu10;
 
 
 
