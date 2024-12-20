@@ -18,7 +18,7 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 const token = process.env.TELEGRAM_TOKEN;
 
-let filename = path.basename('./img.jpg');
+
 
 const bot = new TelegramBot(token, { polling: true });
 
