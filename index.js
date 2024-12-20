@@ -83,6 +83,10 @@ bot.on('message', async (msg) => {
     }
 
     else {
+        if(!msg.text){
+            bot.sendMessage(msg.chat.id, 'Please enter some text');
+            return
+        }
         console.log(msg.text);
         const prompt = msg.text;
         const result = await model.generateContent(prompt);
