@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini with Tg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+
+<style>
+  body {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 20rem;
+    overflow: hidden;
+
+  }
+
+  h2 {
+    text-wrap: balance;
+  }
+</style>
+
+<body>
+  <h2 class="h2">You will be redirected to the bot in <span>5</span> seconds</h2>
+</body>
+
+<script>
+  const h2 = document.querySelector('.h2');
+  const span = document.querySelector('span');
+
+
+  window.addEventListener("load", showPage, false);
+
+  function showPage() {
+    setInterval(() => {
+      span.textContent--;
+      if (span.textContent == 0) {
+        window.location.href = "https://www.t.me/hjhdhd_bot";
+      }
+    }, 1000);
+  }
+
+</script>
+
+</html>
