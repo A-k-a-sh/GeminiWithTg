@@ -15,6 +15,10 @@ const port = 3000;
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEYY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 // const prompt = "Explain how AI works";
 
 // const result = await model.generateContent(prompt);
@@ -151,7 +155,9 @@ bot.on('message', async (msg) => {
 
 
 app.get('/' , (req , res) => {
-    res.send('Hello World');
+
+    res.sendFile(path.join(__dirname , 'index.html'));
+    //res.send('Hello World');
 })
 
 app.listen(port, () => {
