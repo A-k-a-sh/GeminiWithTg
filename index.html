@@ -18,9 +18,14 @@
     background-color: black;
     color: white;
     margin: 0;
-    padding: 20rem;
+    padding: 0;
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
 
+    justify-content: center;
+    align-items: center;
   }
 
   h2 {
@@ -37,7 +42,7 @@
   const span = document.querySelector('span');
 
 
-  window.addEventListener("load", showPage, false);
+  //window.addEventListener("load", showPage, false);
 
   function showPage() {
     setInterval(() => {
