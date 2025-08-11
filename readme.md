@@ -1,4 +1,4 @@
-# Telegram Bot with Gemini AI
+ # Telegram Bot with Gemini AI
 
 A Telegram bot powered by Google's Gemini AI that can respond to text messages. The bot includes a web interface with a glitch effect that redirects users to the Telegram bot.
 
@@ -30,7 +30,7 @@ Before running this project, make sure you have:
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/A-k-a-sh/GeminiWithTg.git
    cd telegram-bot-gemini
    ```
 
