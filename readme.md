@@ -86,16 +86,6 @@ The bot is deployed on Render's free plan. You can access it via:
 - Preserves code formatting with proper markdown
 - Handles both inline code and code blocks
 
-### Image Processing
-- Downloads images sent to the bot
-- Saves with unique timestamps
-- Provides confirmation messages
-
-### Web Interface
-- Cyberpunk-style glitch effect animation
-- Responsive design for mobile and desktop
-- Auto-redirect functionality
-
 ## 📁 Project Structure
 
 ```
